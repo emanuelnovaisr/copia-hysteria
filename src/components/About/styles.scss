@@ -1,0 +1,139 @@
+.about {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    margin-top: -300px;
+
+    .text {
+        overflow: hidden;
+        position: absolute;
+        color: red;
+        z-index: 3;
+        background-color: white;
+        -webkit-box-shadow: -1px -4px 9px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px -4px 9px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px -4px 9px -4px rgba(0, 0, 0, 0.75);
+        width: 100%;
+        height: 100%;
+    }
+
+    .top {
+        display: flex;
+
+        .line-top {
+            position: absolute;
+            background-color: red;
+            width: 0;
+            height: 0;
+
+            &.active {
+                width: 2px;
+                height: 100%;
+                transition: height 5s;
+                margin-left: 30px;
+            }
+        }
+
+        .title {
+            padding: 50px;
+            font-size: 50px;
+        }
+    }
+
+    .line-horizontal {
+        background-color: red;
+        width: 0;
+        height: 0;
+
+        &.active {
+            width: 120%;
+            height: 2px;
+            transition: width 2s;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        height: 110%;
+
+        .line-vertical {
+            background-color: red;
+            width: 0;
+            height: 0;
+            margin-left: 30%;
+
+            &.active {
+                width: 6px;
+                height: 60%;
+                transition: height 2s;
+            }
+        }
+
+        .paragraph {
+            padding: 20px;
+            font-size: 26px;
+        }
+    }
+
+    .loading {
+        width: 150px;
+        z-index: 3;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .circle {
+        position: absolute;
+        z-index: 3;
+        border-radius: 50%;
+
+        &.top{
+            background: transparent;
+            top: 0%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+
+            &.active {
+                width: 110%;
+                height: 110%;
+                border: 1px solid red;
+                transition: width 1.5s ease-out, height 1.5s ease-out, border 2s ease-out, transform 0.5s ease-out;
+            }
+        }
+        &.left{
+            background: transparent;
+            bottom: -50%;
+            left: -10%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+
+            &.active {
+                width: 50%;
+                height: 50%;
+                border: 1px solid red;
+                transition: width 2s ease-out, height 2s ease-out, border 2s ease-out, transform 0.5s ease-out;
+            }
+        }
+        &.right{
+            background: transparent;
+            bottom: -50%;
+            right: -50%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+
+            &.active {
+                width: 60%;
+                height: 75%;
+                border: 1px solid red;
+                transition: width 2s ease-out, height 2s ease-out, border 2s ease-out, transform 0.5s ease-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.titles{
+    overflow: hidden;
+    display: flex;
+    background-color: red;
+    color: palevioletred;
+    justify-content: left;
+    align-items: left;
+    height: 200px;
+    .title{
+        font-size: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

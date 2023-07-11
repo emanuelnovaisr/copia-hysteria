@@ -1,0 +1,9 @@
+.brandlab {
+    background-color: black;
+    .cards {
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}

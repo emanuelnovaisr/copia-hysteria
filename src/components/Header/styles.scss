@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 6;
+    position: absolute;
+    padding: 20px;
+    margin-bottom: -50px;
+    .logo{
+        background-color: black;
+    }
+    .menu{
+        position: fixed;
+        margin-left: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 70px;
+        font-weight: bolder;
+        height: 70px;
+        box-shadow: 2px 2px 2px #3030308a;
+        background-color: rgb(218, 40, 40);
+        border-radius: 50%;
+        color: white;
+    }
+}
